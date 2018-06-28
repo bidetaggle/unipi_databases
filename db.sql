@@ -128,23 +128,39 @@ insert into vehicules (id_owner, manufacturer, model, manufacturing_date, status
 insert into vehicules (id_owner, manufacturer, model, manufacturing_date, status, license_number) values (19, 'Buick', 'Century', '2012-06-26 20:05:54', 0, '9309870184');
 insert into vehicules (id_owner, manufacturer, model, manufacturing_date, status, license_number) values (3, 'Volkswagen', 'Jetta', '2007-09-28 15:46:33', 1, '1033840971');
 
+-- sales only
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 13, 22438.75, '2014-05-14 18:12:32');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 14, 15003.53, '1994-04-30 11:07:18');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 4, 16249.84, '2007-06-22 13:24:56');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 10, 6342.0, '2007-04-26 20:01:56');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 11, 18620.42, '2008-03-25 19:38:47');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 18, 942.81, '2011-02-15 00:22:19');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 15, 27725.77, '2008-03-04 15:21:31');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 9, 5944.54, '2008-10-25 18:09:51');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 7, 17442.77, '1995-04-10 07:15:32');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 21, 26748.88, '2001-11-10 06:56:06');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 24, 20629.76, '2011-11-16 10:41:23');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 8, 19948.35, '2008-05-05 17:44:58');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 2, 6768.81, '2013-01-02 14:23:59');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 19, 11431.44, '1995-04-10 15:29:06');
+-- insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 29, 25313.79, '1995-01-22 03:22:08');
 
-insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 13, 22438.75, '2014-05-14 18:12:32');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 14, 15003.53, '1994-04-30 11:07:18');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 4, 16249.84, '2007-06-22 13:24:56');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 10, 6342.0, '2007-04-26 20:01:56');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 11, 18620.42, '2008-03-25 19:38:47');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 18, 942.81, '2011-02-15 00:22:19');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 15, 27725.77, '2008-03-04 15:21:31');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 9, 5944.54, '2008-10-25 18:09:51');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 7, 17442.77, '1995-04-10 07:15:32');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 21, 26748.88, '2001-11-10 06:56:06');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 24, 20629.76, '2011-11-16 10:41:23');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 8, 19948.35, '2008-05-05 17:44:58');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 2, 6768.81, '2013-01-02 14:23:59');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 19, 11431.44, '1995-04-10 15:29:06');
-insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 29, 25313.79, '1995-01-22 03:22:08');
-
+-- sales with negative numbers : negative price means that it's a purchase from the salesman
+insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 4, 1197, '2002-09-28');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 5, -37267, '2003-04-23');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 10, -34206, '2002-09-17');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 21, -46879, '2000-08-25');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 11, 42157, '2004-09-26');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 16, 46782, '2000-11-29');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 34, 44854, '2005-06-01');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 38, -34775, '2002-09-10');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 10, -35931, '2011-06-27');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 17, 26657, '2001-05-06');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 13, 25436, '2011-09-03');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (10, 40, -12413, '2010-03-30');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (2, 21, 38265, '2004-01-06');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (7, 40, 36914, '2004-05-19');
+insert into sales (id_employee, id_vehicule, price, sale_date) values (4, 25, 21530, '2005-09-15');
 
 insert into repairs (id_employee, id_vehicule, cost, start_date, end_date) values (6, 17, 71.94, '2015-01-18 12:11:05', '2015-02-01 09:26:46');
 insert into repairs (id_employee, id_vehicule, cost, start_date, end_date) values (9, 28, 277.91, '2014-09-06 22:30:19', '2014-09-12 04:26:47');
@@ -350,46 +366,45 @@ insert into repairs (id_employee, id_vehicule, cost, start_date, end_date) value
 
 
 
-/* -- small dataset to test (not up to date)
+-- small dataset to test (not up to date)
 
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (2, 'Jojo', 'Stitch', 'jstitch0@typepad.com', '7264255419', '5871143555', 1);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (3, 'Rebeca', 'Cloute', 'rcloute1@tumblr.com', '3809896661', '0549290095', 1);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (4, 'Randolph', 'Duer', 'rduer2@rediff.com', '9879295571', '7695482374', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (5, 'Zacharia', 'Yegorchenkov', 'zyegorchenkov3@ebay.co.uk', '5172441715', '1145087884', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (6, 'Cortie', 'Clendennen', 'cclendennen4@1688.com', '6719993106', '3684875104', 1);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (7, 'Mickie', 'Hehnke', 'mhehnke5@taobao.com', '9948143275', '3951697938', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (8, 'Rachele', 'McAllen', 'rmcallen6@state.gov', '8198006637', '8717739047', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (9, 'Engelbert', 'Hounsome', 'ehounsome7@abc.net.au', '2151255006', '4406284788', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (10, 'Rivi', 'Britnell', 'rbritnell8@nyu.edu', '5387511575', '6611855122', 0);
-insert into employees (id, firstname, lastname, email, phone, TRN, category) values (11, 'Zacharias', 'Grinstead', 'zgrinstead9@weibo.com', '8104541308', '8167574431', 1);
-
-
-insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (2, 'Jessalyn', 'Franzel', 'jfranzel0@oaic.gov.au', '8573556423', '9580138516');
-insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (3, 'Keven', 'Meric', 'kmeric1@howstuffworks.com', '4156926891', '5890839330');
-insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (4, 'Adrea', 'Himpson', 'ahimpson2@zdnet.com', '4052532342', '6500844270');
-insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (5, 'Cristal', 'Mathonnet', 'cmathonnet3@zdnet.com', '7762956425', '9328015499');
-insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (6, 'Davita', 'Bonanno', 'dbonanno4@weibo.com', '5951956703', '3863533925');
-
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (1, 2, 'Dodge', 'Ram 1500', '1985-08-31 07:23:15', 0, '6757410230');
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (2, 3, 'Chevrolet', 'Impala', '1993-12-06 02:12:53', 1, '8815979476');
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (3, 3, 'Chevrolet', 'G-Series G10', '1999-11-10 01:09:58', 0, '2446816045');
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (4, 6, 'Mercedes-Benz', 'W201', '1998-08-04 13:26:46', 1, '7014396048');
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (5, 4, 'Mercedes-Benz', 'CLS-Class', '2013-12-31 17:55:41', 0, '8084484591');
-insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (6, 5, 'Buick', 'LeSabre', '1986-08-09 06:36:21', 1, '6750579884');
-
-
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (2, 4, 4, 942.68, '2000-11-06 02:53:10', '2000-11-16 17:07:23');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (3, 10, 2, 118.95, '2005-01-31 14:48:10', '2005-02-09 22:51:09');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (4, 7, 3, 118.53, '2002-01-07 14:45:05', '2002-01-09 07:58:12');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (5, 8, 6, 675.62, '2004-12-09 03:41:15', '2004-12-19 08:30:15');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (6, 5, 5, 655.91, '2003-08-14 10:07:36', '2003-08-20 00:36:27');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (7, 9, 2, 874.15, '2007-04-19 19:02:55', '2007-04-29 00:24:53');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (8, 10, 4, 746.85, '2011-10-17 10:42:39', '2011-10-21 00:46:44');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (9, 8, 5, 849.75, '2005-01-26 00:53:38', '2005-01-30 18:58:24');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (10, 7, 5, 269.85, '2005-08-20 10:56:15', '2005-08-27 01:01:10');
-insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (11, 10, 6, 863.83, '2002-07-18 14:14:26', '2002-07-22 17:38:49');
-
-insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (2, 11, 1, 778.76, '2005-03-11 17:27:16');
-insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (3, 2, 2, 736.64, '2008-01-09 21:02:19');
-insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (4, 6, 5, 246.25, '2005-04-24 04:43:46');
-*/
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (2, 'Jojo', 'Stitch', 'jstitch0@typepad.com', '7264255419', '5871143555', 1);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (3, 'Rebeca', 'Cloute', 'rcloute1@tumblr.com', '3809896661', '0549290095', 1);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (4, 'Randolph', 'Duer', 'rduer2@rediff.com', '9879295571', '7695482374', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (5, 'Zacharia', 'Yegorchenkov', 'zyegorchenkov3@ebay.co.uk', '5172441715', '1145087884', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (6, 'Cortie', 'Clendennen', 'cclendennen4@1688.com', '6719993106', '3684875104', 1);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (7, 'Mickie', 'Hehnke', 'mhehnke5@taobao.com', '9948143275', '3951697938', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (8, 'Rachele', 'McAllen', 'rmcallen6@state.gov', '8198006637', '8717739047', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (9, 'Engelbert', 'Hounsome', 'ehounsome7@abc.net.au', '2151255006', '4406284788', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (10, 'Rivi', 'Britnell', 'rbritnell8@nyu.edu', '5387511575', '6611855122', 0);
+-- insert into employees (id, firstname, lastname, email, phone, TRN, category) values (11, 'Zacharias', 'Grinstead', 'zgrinstead9@weibo.com', '8104541308', '8167574431', 1);
+--
+--
+-- insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (2, 'Jessalyn', 'Franzel', 'jfranzel0@oaic.gov.au', '8573556423', '9580138516');
+-- insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (3, 'Keven', 'Meric', 'kmeric1@howstuffworks.com', '4156926891', '5890839330');
+-- insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (4, 'Adrea', 'Himpson', 'ahimpson2@zdnet.com', '4052532342', '6500844270');
+-- insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (5, 'Cristal', 'Mathonnet', 'cmathonnet3@zdnet.com', '7762956425', '9328015499');
+-- insert into individuals (id_owner, firstname, lastname, email, phone, TRN) values (6, 'Davita', 'Bonanno', 'dbonanno4@weibo.com', '5951956703', '3863533925');
+--
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (1, 2, 'Dodge', 'Ram 1500', '1985-08-31 07:23:15', 0, '6757410230');
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (2, 3, 'Chevrolet', 'Impala', '1993-12-06 02:12:53', 1, '8815979476');
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (3, 3, 'Chevrolet', 'G-Series G10', '1999-11-10 01:09:58', 0, '2446816045');
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (4, 6, 'Mercedes-Benz', 'W201', '1998-08-04 13:26:46', 1, '7014396048');
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (5, 4, 'Mercedes-Benz', 'CLS-Class', '2013-12-31 17:55:41', 0, '8084484591');
+-- insert into vehicules (id_vehicule, id_owner, manufacturer, model, manufacturing_date, status, license_number) values (6, 5, 'Buick', 'LeSabre', '1986-08-09 06:36:21', 1, '6750579884');
+--
+--
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (2, 4, 4, 942.68, '2000-11-06 02:53:10', '2000-11-16 17:07:23');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (3, 10, 2, 118.95, '2005-01-31 14:48:10', '2005-02-09 22:51:09');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (4, 7, 3, 118.53, '2002-01-07 14:45:05', '2002-01-09 07:58:12');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (5, 8, 6, 675.62, '2004-12-09 03:41:15', '2004-12-19 08:30:15');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (6, 5, 5, 655.91, '2003-08-14 10:07:36', '2003-08-20 00:36:27');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (7, 9, 2, 874.15, '2007-04-19 19:02:55', '2007-04-29 00:24:53');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (8, 10, 4, 746.85, '2011-10-17 10:42:39', '2011-10-21 00:46:44');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (9, 8, 5, 849.75, '2005-01-26 00:53:38', '2005-01-30 18:58:24');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (10, 7, 5, 269.85, '2005-08-20 10:56:15', '2005-08-27 01:01:10');
+-- insert into repairs (id_repair, id_employee, id_vehicule, cost, start_date, end_date) values (11, 10, 6, 863.83, '2002-07-18 14:14:26', '2002-07-22 17:38:49');
+--
+-- insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (2, 11, 1, 778.76, '2005-03-11 17:27:16');
+-- insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (3, 2, 2, 736.64, '2008-01-09 21:02:19');
+-- insert into sales (id_sale, id_employee, id_vehicule, price, sale_date) values (4, 6, 5, 246.25, '2005-04-24 04:43:46');

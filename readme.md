@@ -10,12 +10,20 @@
 
 ## task 3 ##
 
-`$ cd client`
-`$ npm install pg`
-`$ node main.js`
+### installation & run instructions ###
 
+- `$ cd client`
+- `$ npm install pg`
+- `$ node main.js`
 
+### output screenshots ###
 
+![code output b](client-output/b.png)
+![code output c](client-output/c.png)
+![code output d](client-output/d.png)
+![code output e](client-output/e.png)
+
+I didn't succeed to do the (a) query
 
 # personal reminder #
 
